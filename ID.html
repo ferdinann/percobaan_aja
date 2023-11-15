@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercell</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="gbrja.png">
+</head>
+<body>
+    <form action="#" method="post">
+        <header>
+          <div class="container">
+            <nav>
+              <div class="kiri">
+                <ul>
+                  <li>
+                    <a href="TUGAS KEL 2 FE.html">
+                      <img class="gmbr" src="gbrja.png" alt="#">
+                    </a>
+                  </li>
+                  <li class="kiri">
+                    <a href="https://supercell.com/en/games/">games</a>
+                  </li>
+                  <li class="kiri">
+                    <a href="https://supercell.com/en/careers/">careers</a>
+                  </li> 
+                  <li class="kiri">
+                    <a href="support.html">Support</a>
+                  </li> 
+                  <li class="kiri">
+                    <a href="Aboutus.html">About-us</a>
+                  </li>
+                <ul>
+              </div> 
+              
+              <div class="kanan">
+                </ul>
+                  <li class="gmbr2">
+                    <a href="https://supercell.com/_next/static/media/supercell_creators_grey.f699541d.svg">
+                      <img src="https://supercell.com/_next/static/media/supercell_creators_grey.f699541d.svg" alt="#">
+                    </a>
+                  </li>
+                  <li class="gmbr2">
+                    <a href="https://supercell.com/_next/static/media/supercell_make_grey.964b2d8d.svg">
+                      <img src="https://supercell.com/_next/static/media/supercell_make_grey.964b2d8d.svg" alt="#">
+                    </a>
+                  </li>
+                  <li class="gmbr2">
+                    <a href="ID.html">
+                      <img src="https://supercell.com/_next/static/media/supercell_id_grey.62affa0b.svg" alt="#">
+                    </a>
+                  </li>
+                  <li class="gmbr2">
+                    <a href="https://supercell.com/_next/static/media/search_icon.534f25e1.webp">
+                      <img src="https://supercell.com/_next/static/media/search_icon.534f25e1.webp" alt="#">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        </form>
+        <div id="google_translate_element"></div>        
+        <p id="translated_text"></p>
+
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+              pageLanguage: 'en'
+            }, 'google_translate_element');
+          }
+        </script>
+
+        <script>
+          function translateText() {
+            const textToTranslate = document.querySelector('#text_to_translate').value;
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=id&dt=t&q=${textToTranslate}`);
+            xhr.send();
+            xhr.onreadystatechange = function() {
+              if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                const translatedText = response[0][0][0];
+                document.querySelector('#translated_text').textContent = translatedText;
+              }
+            }
+          }
+          </script>
+        </div>
+      <div class="paragraf">
+        <h1 class="text">SUPERCELL ID</h1>
+        <br>
+        <h3 class="text">Keep your Supercell ID games safe and stay connected</h3>
+        <br>
+        <p class="text">Setting up a Supercell ID is free and easy. Just enter your game’s settings and</p>
+        <p class="text">tap the button under ”Supercell ID” to get started. You can find it in all Supercell</p>
+        <p class="text">games, and it’s also available in select games by partner developers.</p>
+        <br>
+        <h3 class="text">Safeguard Your Games</h3>
+      </div>
+      <div class="img">
+        <image src="safeguard.png" width="50%" height="50%"></image>
+      </div>
+      <div class="paragraf2">
+        <p>Whether you’re hopping back into games after time away or reinstalling on a new</p>
+        <p>device, Supercell ID will always bring you right back where you left off. Supercell</p>
+        <p>ID also lets you jump into your game on all of your mobile devices, including</p>
+        <p>tablets.</p>
+      </div>
+      <br>
+      <div>
+        <h3 style="margin-left: 30%;">Connect Your Supercell ID Games</h3>
+      </div>
+      <div class="img">
+        <image src="connect.png" width="50%" height="50%"></image>
+      </div>
+      <div class="paragraf2">
+        <p>We made it easy to connect all Supercell’s games to one Supercell ID. Start by</p>
+        <p>creating a Supercell ID in one game and then connect the rest. It's as simple as</p>
+        <p>that.</p>
+      </div>
+      <br>
+      <div class="paragraf2">
+        <h3>Easily Switch Between Multiple Supercell ID Accounts</h3>
+      </div>
+      <div class="img">
+        <image src="switch.png" width="50%" height="50%"></image>
+      </div>
+      <div class="paragraf2">
+        <p>Supercell ID makes it easy to switch between multiple accounts of the same</p>
+        <p>game on a single device. Perfect for sharing the fun with others or giving yourself</p>
+        <p>a fresh start.</p>
+      </div>
+      <br>
+      <div class="paragraf2">
+        <h3>Supercell ID Friends</h3>
+      </div>
+      <br>
+      <div class="paragraf2">
+        <p>With Supercell ID, you can connect with other players and friends. Supercell ID</p>
+        <p>Friends you’ve connected with in one game will show up in other Supercell ID</p>
+        <p>games that they play, too. If you can’t find a Friends section in your Supercell ID</p>
+        <p>game, it means the feature will arrive in an update soon.</p>
+      </div>
+      <br>
+      <div class="paragraf2">
+        <h3>For Parents</h3>
+      </div>
+    </div>
+    <br>
+    <div class="paragraf2">
+      <p>Parents, are you looking for something that you didn’t find on this page? Check</p>
+      <p>out our Parents Guide for more detailed information that may be more relevant to</p>
+      <p>your needs.</p>
+    </div>
+    <div class="sosmed">
+      <div><p>Follow us on</p></div>
+    <div class="bagian">
+      <div class="donlod"><a href="https://apps.apple.com/us/developer/supercell/id488106216"><img src="apple.png" alt=""></a></div>
+      <div class="donlod"><a href="https://www.play.google.com"><img src="playstore.png" alt=""></a></div>
+    </div>
+      <ul>  
+        <li><a href="https://www.youtube.com">
+          <img src="yutub.png" alt="">
+        </a></li>
+        <li><a href="https://www.facebook.com">
+          <img src="facebook.png" alt="">
+        </a></li>
+        <li><a href="https://www.instagram.com">
+          <img src="instagram.png" alt="">
+        </a></li>
+        <li><a href="https://www.twitter.com">
+          <img src="twiter.png" alt="">
+        </a></li>
+        <li><a href="https://id.linkedin.com">
+          <img src="linkedin.png" alt="">
+        </a></li>
+        </a></li>
+        <li><a href="https://id.linkedin.com">
+          <img src="gbr.png" alt="">
+        </a></li>
+      </ul>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+    <div class="tulisakhir">
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">Team of Service</a></div>
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">Privaci Policy</a></div>
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">Parent's Guide</a></div>
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">Safe and Fair Play Policy</a></div>
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">Order Legal Docs</a></div>
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">For Media</a></div>
+      <div class="tulisakhir2"><a href="https://supercell.com/en/terms-of-service/">Manage Cookies</a></div>
+    </div>  
+      <span>Supercell Oy</span>
+      <span>Jätkäsaarenlaituri 1</span>
+      <span>00180 Helsinki</span>
+      <span>Finland</span>
+    <a class="gbrterakhir" href="https://supercell.com/_next/static/media/supercell_logo.38ec5826.webp"><img src="coc.png" alt=""></a>
+  </div>
+</body>
+</html>

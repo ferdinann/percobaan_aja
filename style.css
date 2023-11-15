@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('bg_hero.png');
+    /* background-size: cover; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    padding: 0;
+    display: inline-block;
+    border: 1px solid black;
+}
+header{
+    display: flex;
+    background-color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-around;  
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.kiri{
+    margin-top: 13px;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
+} 
+ul{ 
+    list-style-type: none;
+    display: flex;
+}
+li{
+    margin: 10px 20px;
+}
+li a{
+    color: gray;
+    font-size: 20px;
+}
+li a:hover{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gmbr2{
+    width: 30px;
+    height: 30px;
+}
+.gmbr{
+    width: 100%;
+    height: 50px;
+}
+.kanan{
+    list-style-type: none;
+    display: flex;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    
+}
+.bekron1{
+    background-image: url('bg_hero.png');
+    background-size: cover;
+}
+
+#google_translate_element{
+    margin-top: 40%;
+    margin-left: 3%;
+    height: 4px;
+    width: auto;
+}
+
+.paragraf{
+    margin-left: 30%;
+}
+.img{
+    margin-left: 30%;
+}
+.paragraf2{
+    margin-left: 30%;
+}
+.sosmed img{
+    width: 25px;
+    height: 20px;
+  }
+  .sosmed{
+    width: 100%;
+    height: 650px;
+    background-color: black;
+  }
+  footer {
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+  }
+  .hide {
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+  }
+  .sosmed p{
+    font-family: sans-serif;
+    padding-top: 3%;
+    color: white;
+  }
+  .sosmed{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    margin-top: 10%;
+    width: 90%;
+  }
+  .sosmed ul li{
+    display: flex;
+  }
+  .bagian{
+    display: flex;
+    padding-left: 60%;
+  }
+  .donlod{
+    padding-left: 0;
+  }
+  .donlod img{
+    width: 100px;
+    height: 40px;
+  }
+  .sosmed hr{
+    width: 80%;
+    border: 1px inset gray;
+  }
+  .sosmed span{
+    color: gray;
+  }
+  .tulisakhir{
+    display: flex;
+    width: 65%;
+    line-height: 1.5;
+    text-decoration: none;
+    padding-bottom: 20px;
+    justify-content: space-between;
+  }
+  .tulisakhir a{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: flex;
+  }
+  .gbrterakhir{
+    padding-left: 80%;
+    margin-bottom: 20%;
+  }
+  .gbrterakhir img{
+    width: 60px;
+    height: 60px;
+  }
+  .scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .scroll-btn:hover {
+    background-color: blue;
+  }
+  .pemisa{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: auto;
+  }
+  .tlsbwh2{
+    padding-left: 20%;
+    margin-top: 5%;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .tlsbwh4{
+    padding-left: 10%;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding-right: 10%;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .bawah{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  .bawah2 img{
+    padding-top: 19%;
+    padding-left: 20%;
+    padding-right: 5%;
+    width: 80%;  
+    height: auto;
+  
+  }
+  .bawah3 img{
+    padding-top: 14%;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 80%;
+    height: auto;
+  }
+  .bwhgbr{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+  }
